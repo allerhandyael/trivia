@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/photo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="300dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#D96CEC"
+        android:text="start game"
+        android:textColor="@color/black"
+        android:textSize="40dp"></Button>
+
+    <Button
+        android:id="@+id/VSGame"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#9B75DF"
+        android:text="You VS your friends"
+        android:textColor="@color/black"
+        android:textSize="30dp"></Button>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSetting"
+        android:text="Settings"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnScorBord"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#95EDED"
+        android:text="Scoreboard"
+        android:textColor="@color/black"
+        android:textSize="30dp"></Button>
+
+
+</LinearLayout>
