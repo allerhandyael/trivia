@@ -27,6 +27,7 @@ public class FbModule {
                     mainActivity.setBackgroundColor(str);
                 }
 
+
             }
 
             @Override

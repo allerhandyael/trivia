@@ -46,7 +46,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         String backgroundColor = i.getStringExtra("color");
         if(backgroundColor != null)
         {
-            setBackgroundColor(backgroundColor);
+          //  setBackgroundColor(backgroundColor);
         }
         else
         {
@@ -111,7 +111,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         // הפעולה בודקת אם הגענו לשאלה האחרונה(אם כן יוצרת את הדיאלוג) ואם לא מראה את השאלה הבאה
         if (typeOfQuestions.equals("American")) {
             if (collectionAmericans.isNotLastQuestion()) {
-                currentQuestion = collectionAmericans.getNextQuestion(Context); // Reference to the current question
+                currentQuestion = collectionAmericans.getNextQuestion(this); // Reference to the current question
 
                 tvQuestion.setText(currentQuestion.getQuestion());
 

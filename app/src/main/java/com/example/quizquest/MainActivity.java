@@ -150,19 +150,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void move(String ans) {
-        if(ans.equals("NoOrYes"))
-        {
-            Intent intent = new Intent(this, GameActivity.class);
+        Intent intent = new Intent(this, GameActivity.class);
+        if(ans.equals("NoOrYes")) {
             intent.putExtra("type","Yes_or_no");
-            startActivity(intent);
-            
-        }
-        if (ans.equals("Americans")) {
-            Intent intent = new Intent(this, GameActivity.class);
+        } else if (ans.equals("Americans")) {
             intent.putExtra("type", "American");
-            startActivity(intent);
         }
-       
-       
+        intent.putExtra("color", backgroundColor); // הוספת צבע הרקע
+        startActivity(intent);
     }
 }
